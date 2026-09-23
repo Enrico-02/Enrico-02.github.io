@@ -1,0 +1,334 @@
+/* Enrico D'Amico — personal site
+   Dark ground, emerald accent, matched to the CV. */
+
+:root {
+  --bg:        #121513;
+  --bg-2:      #191D1B;
+  --bg-3:      #212724;
+  --line:      #2C3430;
+  --ink:       #ECEFEC;
+  --ink-2:     #A6AEA9;
+  --ink-3:     #6E7873;
+  --acc:       #2FA37A;
+  --acc-deep:  #0E5138;
+  --serif:     Charter, "Bitstream Charter", Georgia, "Times New Roman", serif;
+  --sans:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --wrap:      1080px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--acc); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------------------------------------------------------------- nav */
+nav {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 14px 32px;
+  background: var(--bg);
+  backdrop-filter: none;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  font-family: var(--serif);
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  border: 1.5px solid var(--acc);
+  padding: 1px 8px 3px;
+}
+.brand:hover { text-decoration: none; background: var(--acc-deep); }
+.nav-links {
+  display: flex;
+  gap: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+.nav-links a { color: var(--ink-2); }
+.nav-links a:hover { color: var(--ink); text-decoration: none; }
+.btn {
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ink);
+  border: 1px solid var(--acc);
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--acc-deep); text-decoration: none; }
+
+/* ---------------------------------------------------------------- hero */
+header {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 72px 32px 72px;
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--acc);
+}
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(42px, 6.4vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
+}
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 34em;
+  margin: 0 0 30px;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 30px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--ink-3);
+}
+.hero-meta strong { color: var(--ink); font-weight: 600; }
+.hero-img img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  border-radius: 3px;
+  filter: grayscale(0.35) contrast(1.03);
+}
+
+/* ---------------------------------------------------------------- sections */
+section {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 60px 32px;
+  border-top: 1px solid var(--line);
+}
+h2 {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3.4px;
+  text-transform: uppercase;
+  color: var(--acc);
+  margin: 0 0 34px;
+}
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.cols p { margin: 0; color: var(--ink-2); }
+
+/* ---------------------------------------------------------------- projects */
+.project {
+  scroll-margin-top: 86px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 32px;
+  padding: 26px 0;
+  border-bottom: 1px solid var(--line);
+}
+.project:last-child { border-bottom: 0; padding-bottom: 0; }
+.project.no-media { grid-template-columns: 1fr; }
+.project.no-media .project-body { max-width: 62em; }
+
+.project-media img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+}
+.thumbs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+.thumbs img { border-radius: 2px; }
+.ph {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: repeating-linear-gradient(-45deg, var(--bg-2), var(--bg-2) 9px, var(--bg-3) 9px, var(--bg-3) 18px);
+  border: 1px dashed var(--line);
+  border-radius: 2px;
+  color: var(--ink-3);
+  font-size: 12px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 4px;
+}
+.project h3 {
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.25;
+}
+.date {
+  font-size: 13px;
+  color: var(--ink-3);
+  white-space: nowrap;
+  letter-spacing: 0.4px;
+}
+.client {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: var(--acc);
+}
+.project p:last-child { margin: 0; color: var(--ink-2); }
+.chip {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  vertical-align: 5px;
+  padding: 2px 7px;
+  margin-left: 8px;
+  background: var(--acc-deep);
+  color: #DFF2E9;
+  border-radius: 2px;
+}
+.chip.muted { background: transparent; border: 1px solid var(--ink-3); color: var(--ink-3); }
+
+/* ---------------------------------------------------------------- skills */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.skill h4 {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 12px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--acc-deep);
+}
+.skill ul { list-style: none; margin: 0; padding: 0; }
+.skill li {
+  font-size: 14.5px;
+  color: var(--ink-2);
+  padding: 3px 0;
+}
+
+/* ---------------------------------------------------------------- contact */
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 46px;
+}
+.contact-form { display: flex; flex-direction: column; gap: 12px; }
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink);
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 12px 14px;
+  resize: vertical;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { outline: none; border-color: var(--acc); }
+.contact-form ::placeholder { color: var(--ink-3); }
+.contact-form button {
+  align-self: flex-start;
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--acc-deep);
+  border: 1px solid var(--acc);
+  border-radius: 2px;
+  padding: 11px 26px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: var(--acc); color: #08130E; }
+.contact-side p { margin: 0 0 20px; color: var(--ink-2); }
+.links { list-style: none; margin: 0; padding: 0; }
+.links li { padding: 5px 0; border-bottom: 1px solid var(--line); }
+
+/* ---------------------------------------------------------------- footer */
+footer {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 26px 32px 44px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+/* ---------------------------------------------------------------- responsive */
+@media (max-width: 880px) {
+  nav { gap: 16px; padding: 12px 20px; }
+  .nav-links { display: none; }
+  header {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 54px 20px 48px;
+  }
+  .hero-img { order: -1; }
+  .hero-img img { margin: 0; max-width: 190px; }
+  section { padding: 44px 20px; }
+  .cols,
+  .contact-wrap { grid-template-columns: 1fr; gap: 22px; }
+  .project { grid-template-columns: 1fr; gap: 18px; }
+  .project-head { flex-direction: column; gap: 2px; }
+  .skill-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  footer { padding: 22px 20px 36px; }
+}
+
+@media (max-width: 520px) {
+  .skill-grid { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 6px; }
+}

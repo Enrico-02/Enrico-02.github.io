@@ -1,131 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Enrico D'Amico WebSite</title>
-        <link rel="stylesheet" href="Styles.css">
-    </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enrico D'Amico — Project Manager &amp; Unity Developer</title>
+<meta name="description" content="Enrico D'Amico — Project Manager and Unity developer based in Milan. VR and MR projects for institutional, cultural and enterprise clients.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <body>
-        <div class="main">
-            <nav>
-                <img class="nav-logo" src="Images/Logo.png">
-                <ul class="nav-links">
-                    <li class="link"><a href="#home">Home</a></li>
-                    <li id="link1" class="link"><a href="#bio">About me</a></li>
-                    <li id="link2" class="link"><a href="#skills">Skills</a></li>
-                    <li id="link3" class="link"><a href="#photogallery">Projects</a></li>
-                </ul>
-                <a href="CV.html" target="_blank">
-                    <button class="btn">Hire me</button>
-                </a> 
-                
-            </nav>
-            
-            <header class="container" id="home">
-                <div class="content">
-                    <span class="blur"></span>
-                    <span class="blur"></span>
-                    <h4>Welcome to my personal WebSite</h4>
-                    <h1>I am <span>Enrico D'Amico</span></h1>
-                    <p><b> Here you can find everything you need to know about me</b>
-                  </p>
-                </div>
-                <div class="image">
-                    <img src="Images/ProPic.png">
-                </div>
-            </header>
-            <div class="bio" id="bio">
-                <h1>About me</h1>
-                <p class="bio"> After graduating from the E.Vittorini scientific high school, I continued my studies in Naba, pursuing my passion for video games and technology.<br>
+<nav>
+  <a class="brand" href="#top">ED</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#academic">Academic</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn" href="CV_Enrico_DAmico_EN.pdf" target="_blank" rel="noopener">Download CV</a>
+</nav>
 
-                    During the work pipelines of academic projects I also dealt with more technical and less artistic work phases and increased my skills in the use of procedural BluePrint, Character controls and UI but my main focus keep remaing the level design and environment. <br>
+<header id="top">
+  <div class="hero">
+    <p class="eyebrow">Milan, Italy</p>
+    <h1>Enrico D'Amico</h1>
+    <p class="lead">Project manager and Unity developer. I run immersive VR and MR
+       projects for institutional, cultural and enterprise clients — from pitch through
+       to on-site delivery.</p>
+    <div class="hero-meta">
+      <span><strong>18 months</strong> in XR production</span>
+      <span><strong>11 projects</strong> shipped or in progress</span>
+      <span><strong>10+</strong> client-site installations</span>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="Images/ProPic.png" alt="Enrico D'Amico">
+  </div>
+</header>
 
-                    Once I obtained my degree in Game Development I decided to embark on a new path on Start2Impact to test myself again as a Back End developer.
-                </p>
-            </div>
-            <section class="container" id="skills">
-                <h2 class="header">Skills</h2>
-                <div class="skills">
-                    <div class="hardskills">
-                        <h4>Hard Skills</h4>
+<section id="about">
+  <h2>About</h2>
+  <div class="cols">
+    <p>I studied Game Development at NABA in Milan, where my focus was level design and
+       environment art. After graduating I spent a year widening the technical side —
+       a backend track at Start2Impact covering Node.js/Express and Java, plus a lot of
+       self-directed work on how to get real output from AI tooling.</p>
+    <p>Since March 2025 I have been at WAY, first as a generalist Unity developer on
+       VR/MR/XR productions and, since January 2026, as project manager. I have built two
+       complete applications on my own — one of them a freelance commission taken on
+       independently — and I now coordinate technical teams, which means I plan the work
+       having already done it myself.</p>
+  </div>
+</section>
 
-                      <ul>
-                        <li>Unreal Engine</li>
-                        <li>Maya</li>
-                        <li>Unity</li>
-                        <li>Quixel</li>
-                        <li>Office</li>
-                        <li>GitHub</li>
-                        <li>Perforce</li>
-                        <li>HTML5</li>
-                      </ul>
-                    </div>
-                    <br>
-                    <div class="softskills">
-                        <h4>Soft Skills</h4>
- 
-                        <ul>
-                            <li>Adobe</li>
-                            <li>TouchDesigner</li>
-                            <li>Reaper</li>
-                            <li>SparkAR</li>
-                         </ul>
-                    </div>
-                </div>
-            </section>
-            <div class="containerphoto" id="photogallery">
-                <h2 class="titlephoto">Project Gallery</h2>
-                <div class="photogallery">
-                    <div class="columnphoto">
-                        <div class="photo">
-                            <img src="Images/Photogallery1.jpeg">
-                            <img src="Images/Photogallery3.png">
-                        </div>
-                    </div>
-                    <div class="columnphoto">
-                        <div class="photo">
-                            <img src="Images/Photogallery2.jpeg">
-                            <img src="Images/Photogallery4.png">
-        
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="container" >
-                <span class="blur"></span>
-                <span class="blur"></span>
-                <div class="column">
-                    
-                    <div class="contact-container">
-                        <form action="https://api.web3forms.com/submit" method="POST" class="contact">
-                            <div class="contact-title">
-                                <h2><Strong>Write me</Strong></h2>
-                                <hr>
-                            </div>
-                            <input type="hidden" name="access_key" value="bd7adb34-1dbd-4ec0-807a-66ae906aba9c">
-                            <input type="text" name="name" placeholder="Your Name" class="Contact-inputs" required>
-                            <input type="email" name="email" placeholder="Your Email" class="Contact-inputs" required>
-                            <textarea name="message" placeholder="Your Message" class="Contact-inputs" required></textarea>
-                            <button type="submit">Submit</button>
-                        </form>
-                        <div class="logo">
-                            <img src="Images/Logo.png">
-                        </div>
-                    </div>
-                    
-                    <div class="socials">
-                        <a href="https://www.linkedin.com/in/enrico-d-amico-1412b32ba/" target="_blank">Linkedin</a>
-                        <a href="https://www.artstation.com/enrico-damico" target="_blank">ArtStation</a>
-                        <a href="https://github.com/Enrico-02" target="_blank">GitHub</a>
-                    </div>
-                   
-                
-            </footer>
-          
+<section id="work">
+  <h2>Selected work</h2>
 
+  <article id="italy-decoded" class="project no-media">
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Italy Decoded <span class="chip">in progress</span></h3>
+        <span class="date">Jun — Dec 2026</span>
+      </div>
+      <p class="client">Italian Ministry of Foreign Affairs (MAECI) · Project Manager</p>
+      <p>An immersive VR/MR experience covering Italy's fourteen strategic industrial
+         sectors, produced for institutional promotion around an exhibition event. I
+         coordinate a team of two to four people, own the phase planning and act as the
+         client-facing contact.</p>
+    </div>
+  </article>
 
-        </div>
-        <script src="script.js"></script>
-    </body>
+  <article id="nure" class="project">
+    <div class="project-media">
+      <img src="Images/work/nure-1.jpg" alt="Nure — virtual reconstruction of the excavation" loading="lazy">
+      <div class="thumbs">
+        <img src="Images/work/nure-2.jpg" alt="Nure — guided visit" loading="lazy">
+        <img src="Images/work/nure-3.jpg" alt="Nure — site detail" loading="lazy">
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Nure — VR guide to an archaeological site</h3>
+        <span class="date">Feb — Jun 2026</span>
+      </div>
+      <p class="client">Freelance engagement · Regional public body · Sole developer</p>
+      <p>A guided VR visit to an archaeological excavation, built around a full virtual
+         reconstruction of the site. An independent freelance commission, taken on outside
+         my work at WAY: I was the only developer and also carried the operational side —
+         roughly seventy per cent development, thirty per cent coordination. Delivered and
+         currently in use.</p>
+    </div>
+  </article>
+
+  <article id="savings-module" class="project no-media">
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Financial Education — Savings Module</h3>
+        <span class="date">H1 2026</span>
+      </div>
+      <p class="client">Schools programme · Project Manager</p>
+      <p>A headset VR training module teaching secondary-school students how saving works.
+         I coordinated a team of two to four people through to delivery. In use, with a
+         second module on inflation planned.</p>
+    </div>
+  </article>
+
+  <article id="aws-installation" class="project">
+    <div class="project-media">
+      <img src="Images/work/aws-1.jpg" alt="AWS VR experience — interior scene" loading="lazy">
+      <div class="thumbs">
+        <img src="Images/work/aws-2.jpg" alt="AWS VR experience — information panel" loading="lazy">
+        <img src="Images/work/aws-3.jpg" alt="AWS VR experience — content view" loading="lazy">
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Amazon AWS — VR event installation</h3>
+        <span class="date">2025 — 2026</span>
+      </div>
+      <p class="client">Amazon Web Services · QA, installation and training</p>
+      <p>A VR station deployed at client events. I ran four installation cycles end to
+         end: setup on site, technical training for the people who would operate it, and
+         support during the event. Since 2026 I also support the project management side.</p>
+    </div>
+  </article>
+
+  <article id="virtual-museum" class="project">
+    <div class="project-media">
+      <img src="Images/work/museum-1.jpg" alt="Virtual museum — main gallery" loading="lazy">
+      <div class="thumbs">
+        <img src="Images/work/museum-2.jpg" alt="Virtual museum — themed room" loading="lazy">
+        <img src="Images/work/museum-3.jpg" alt="Virtual museum — archive room" loading="lazy">
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Virtual museum — Italian luxury maison <span class="chip muted">under NDA</span></h3>
+        <span class="date">Oct 2025 — Mar 2026</span>
+      </div>
+      <p class="client">Confidential client · Sole developer</p>
+      <p>A Unity/WebGL web application giving access to a fashion house's complete digital
+         archive. I designed and built the whole thing on my own over six months, from
+         concept to delivery. The production is confidential and the client has not
+         released it publicly — a private walkthrough and further detail are available on
+         request.</p>
+    </div>
+  </article>
+
+  <article id="other-projects" class="project no-media">
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Further XR projects</h3>
+        <span class="date">2025 — 2026</span>
+      </div>
+      <p class="client">QA · planning support · on-site installation</p>
+      <p>Five more immersive projects for cultural, trade-association and institutional
+         clients: Sight, Marco Polo, Brescia Innovamusei, ANCE Belluno and the Immersive
+         Media Center.</p>
+    </div>
+  </article>
+</section>
+
+<section id="academic">
+  <h2>Academic &amp; early work</h2>
+
+  <article id="wild-rebirth" class="project">
+    <div class="project-media">
+      <img src="Images/work/wild-1.jpg" alt="Wild Rebirth — environment" loading="lazy">
+      <div class="thumbs">
+        <img src="Images/work/wild-2.jpg" alt="Wild Rebirth — environment" loading="lazy">
+        <img src="Images/work/wild-3.jpg" alt="Wild Rebirth — environment" loading="lazy">
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Wild Rebirth</h3>
+        <span class="date">2023 — 2024</span>
+      </div>
+      <p class="client">NABA thesis project · Level design &amp; environment art</p>
+      <p>Level design of a post-apocalyptic urban area, built in Unity: layout of the
+         playable space, environment dressing and lighting, with nature reclaiming the
+         city as the guiding idea. My graduation project at NABA.</p>
+    </div>
+  </article>
+
+  <article id="shooter" class="project">
+    <div class="project-media">
+      <img src="Images/work/shooter-1.jpg" alt="Shooter prototype" loading="lazy">
+      <div class="thumbs">
+        <img src="Images/work/shooter-2.jpg" alt="Shooter prototype" loading="lazy">
+        <img src="Images/work/leveldesign-1.jpg" alt="Level design blockout map" loading="lazy">
+      </div>
+    </div>
+    <div class="project-body">
+      <div class="project-head">
+        <h3>Shooter prototype &amp; level blockouts</h3>
+        <span class="date">2023</span>
+      </div>
+      <p class="client">Academic projects · Unity · level design</p>
+      <p>A playable shooter prototype and a set of level blockouts and map studies, made
+         during the course: greybox layouts, sightlines and pacing worked out before any
+         art went in.</p>
+    </div>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-grid">
+    <div class="skill">
+      <h4>Project management</h4>
+      <ul>
+        <li>Phased milestone planning</li>
+        <li>Storyboarding &amp; pre-production</li>
+        <li>Client pitching and presentations</li>
+        <li>Effort estimation</li>
+        <li>Technical team coordination</li>
+        <li>Progress reports &amp; status reviews</li>
+        <li>On-site installation &amp; end-user training</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h4>XR &amp; hardware</h4>
+      <ul>
+        <li>OpenXR</li>
+        <li>XR Interaction Toolkit</li>
+        <li>Meta SDK (Oculus Integration)</li>
+        <li>Meta Quest 2 / 3 / Pro</li>
+        <li>HTC Vive · Pico</li>
+        <li>Desktop · console · mobile · web</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h4>Development</h4>
+      <ul>
+        <li>Unity &amp; C#</li>
+        <li>Unreal Engine</li>
+        <li>WebGL</li>
+        <li>JavaScript</li>
+        <li>Node.js / Express</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h4>Content &amp; tools</h4>
+      <ul>
+        <li>Maya · Blender</li>
+        <li>Level design · retexturing</li>
+        <li>Git / GitHub · Perforce</li>
+        <li>TouchDesigner · Spark AR</li>
+        <li>Adobe suite · Reaper</li>
+        <li>Excel · PowerPoint</li>
+        <li>AI-assisted development</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get in touch</h2>
+  <div class="contact-wrap">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <input type="hidden" name="access_key" value="bd7adb34-1dbd-4ec0-807a-66ae906aba9c">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="contact-side">
+      <p>Based in Milan. Open to project management and XR production roles —
+         on site, hybrid or remote.</p>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/enrico-d-amico-1412b32ba/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/Enrico-02" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:enricodamico412@gmail.com">enricodamico412@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© <span id="year">2026</span> Enrico D'Amico</span>
+  <span>Milan, Italy</span>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
+</body>
 </html>
